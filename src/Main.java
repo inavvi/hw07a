@@ -36,7 +36,7 @@ public class Main {
         var totalC=15000;
         int month=0;
         while (totalC<=12000_000) {
-            totalC=totalC+totalC/100*7;
+            totalC=totalC+totalC/100*7/12;
             month=month+1;
             System.out.println("Месяц "+month+" сумма вклада "+totalC);
         }
@@ -46,7 +46,7 @@ public class Main {
         var amonth=0;
         while (totalCb<=12000_000) {
             amonth = amonth + 1;
-            totalCb = totalCb + totalCb / 100 * 7;
+            totalCb = totalCb + totalCb / 100 * 7/12;
             if (amonth % 6 == 0) {
                 System.out.println("Месяц " + amonth + " сумма вклада " + totalCb);
             }
@@ -56,7 +56,7 @@ public class Main {
         var totalCd=15000;
         var totalMonth=12*9;
         for (var mon=1; mon<=totalMonth; mon++) {
-            totalCd = totalCd + totalCd / 100 * 7;
+            totalCd = totalCd + totalCd / 100 * 7/12;
             if (mon % 6 == 0) {
                 System.out.println("Месяц " + mon + " сумма вклада " + totalCd);
             }
